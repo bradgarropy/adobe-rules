@@ -1,8 +1,15 @@
-const sayHello = (name = "world"): string => {
-    const message = `Hello, ${name}!`
-    console.log(message)
+import {Condition, DataValue, evaluateCondition} from "./condition"
+import {evaluateStatement, isStatement, Statement} from "./statement"
 
-    return message
+type Data = Record<string, DataValue | DataValue[]>
+
+const evaluate = (rule: Statement | Condition, data: Data): boolean => {
+    if (isStatement(rule)) {
+        return evaluateStatement(rule as Statement, data)
+    }
+
+    return evaluateCondition(rule as Condition, data)
 }
 
-export = sayHello
+export {evaluate}
+export type {Condition, Data, Statement}

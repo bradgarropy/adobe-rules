@@ -12,6 +12,10 @@
 
 _Starter for `node` libraries._
 
+```
+(month === “August” && (day > 15 || [1, 5, 9].include(hour)))
+```
+
 // TODO: write intro section.
 
 ## 📦 Installation

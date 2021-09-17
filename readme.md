@@ -1,6 +1,6 @@
 # 🧠 adobe rule evaluator
 
-_During an interview with [Adobe][adobe], I was asked to create a search bar with recent searches. Getting the user experience just right on this one was a lot of fun!_
+_During an interview with [Adobe][adobe], I was asked to express logical statements as objects, and create a function that evaluated them against a set of data. Modeling the objects was tough, but after that everything else fell into place!_
 
 [![github actions][github-actions-badge]][github-actions]
 [![coverage][codecov-badge]][codecov]
@@ -10,15 +10,35 @@ _During an interview with [Adobe][adobe], I was asked to create a search bar wit
 
 ## ❓ question
 
-TODO
+You've most likely written logical statements in code before, like the one shown below.
 
+```javascript
+month === "August" && (day > 15 || [1, 5, 9].include(hour))
 ```
-(month === “August” && (day > 15 || [1, 5, 9].include(hour)))
-```
+
+Now imagine you are implementing a rule builder that allows the user to create logical statements. Model the logical statements as objects, and then create a function that evaluates them against a set of data.
 
 ## 🤔 assumptions
 
-TODO
+I made a few basic assumptions to bound the complexity of the problem.
+
+First, I decided to limit my support to the following logical operators.
+
+-   `and`
+-   `or`
+
+Additionally, I decided to support only the following comparison operators.
+
+-   `eq`
+-   `neq`
+-   `gt`
+-   `lt`
+-   `gte`
+-   `lte`
+-   `inc`
+-   `ninc`
+
+And finally, I limited the input data types to `string`, `number`, and `boolean`.
 
 ## 💀 execution
 

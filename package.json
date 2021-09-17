@@ -1,18 +1,21 @@
 {
-    "name": "@bradgarropy/node-library-starter",
-    "version": "1.2.2",
-    "description": "🟢 node library starter",
+    "name": "@bradgarropy/adobe-rules",
+    "version": "0.0.1",
+    "description": "🧠 adobe interview question - rule evaluator",
     "keywords": [
         "node",
         "typescript",
         "eslint",
         "prettier",
         "jest",
-        "starter"
+        "adobe",
+        "rules",
+        "logic",
+        "interview"
     ],
-    "homepage": "https://github.com/bradgarropy/node-library-starter",
+    "homepage": "https://github.com/bradgarropy/adobe-rules",
     "bugs": {
-        "url": "https://github.com/bradgarropy/node-library-starter/issues"
+        "url": "https://github.com/bradgarropy/adobe-rules/issues"
     },
     "license": "MIT",
     "author": {
@@ -27,7 +30,7 @@
     "types": "dist/types/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/bradgarropy/node-library-starter"
+        "url": "https://github.com/bradgarropy/adobe-rules"
     },
     "scripts": {
         "start": "tsc --watch",
